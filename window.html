@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Event</title>
+</head>
+<body>
+    
+    <button onclick="openNewWindow()">Open New Window</button>
+    <button onclick="window.close()">Close Window</button>
+    
+</body>
+<script>
+    let a;
+    function openNewWindow(){
+      a =  window.open("https://www.google.com"," ","width=800,height=600,left=380,top=200");
+      a.document.write("<p>This is a new window with moveTo and moveBy event</p>");
+    }
+    function closeWindow(){
+        a.moveTo(200,300);
+        a.close();
+    }
+</script>
+</html>
